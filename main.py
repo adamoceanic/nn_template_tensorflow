@@ -47,10 +47,6 @@ def create_placeholders(n_x, n_y):
     Returns:
     X -- placeholder for the data input, of shape [n_x, None] and dtype "float"
     Y -- placeholder for the input labels, of shape [n_y, None] and dtype "float"
-    
-    Tips:
-    - You will use None because it let's us be flexible on the number of examples you will for the placeholders.
-      In fact, the number of examples during test/train is different.
     """
 
     X = tf.placeholder(tf.float32, [n_x, None])
